@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+  <test name="Validate user login">
+    <classes>
+      <class name="codingChallenge.mapsynq.HomePage"/>
+    </classes>
+    </test>
+     <test  name="Validate Add to Cart functionality">
+    <classes>
+      <class name="codingChallenge.mapsynq.ClickAddToCartTest"/>
+    </classes>
+    </test>
+     <test  name="Validate Products page title">
+    <classes>
+      <class name="codingChallenge.mapsynq.ValidateProductsPageTitle"/>
+    </classes>
+    </test>
+    
+  
+</suite> <!-- Suite -->
