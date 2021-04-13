@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.471 sec
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.072 sec <<< FAILURE!
+ValidateProductsTitle(codingChallenge.mapsynq.ValidateProductsPageTitle)  Time elapsed: 0.533 sec  <<< FAILURE!
+java.lang.AssertionError: Product Title does not match expected [Product] but found [PRODUCTS]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at codingChallenge.mapsynq.ValidateProductsPageTitle.ValidateProductsTitle(ValidateProductsPageTitle.java:38)
+

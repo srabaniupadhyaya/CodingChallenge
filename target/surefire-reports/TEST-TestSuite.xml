@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="5.196" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="4.122" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sraba\eclipse-workspace\mapsynq"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sraba\workspace2\mapsynq"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\sraba\eclipse-workspace\mapsynq"/>
+    <property name="user.dir" value="C:\Users\sraba\workspace2\mapsynq"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
     <property name="os.arch" value="amd64"/>
@@ -26,7 +26,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Users\sraba\Selenium Project\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\sraba\Selenium Project\apache-maven-3.8.1\bin;C:\Users\sraba\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\sraba\Selenium Project\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Users\sraba\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="C:\Users\sraba\Selenium Project\apache-maven-3.8.1\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="59.0"/>
@@ -59,6 +59,17 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="basePageNavigation" classname="codingChallenge.mapsynq.HomePage" time="4.952"/>
-  <testcase name="basePageNavigation" classname="codingChallenge.mapsynq.HomePage" time="0.244"/>
+  <testcase name="basePageNavigation" classname="codingChallenge.mapsynq.HomePage" time="2.934"/>
+  <testcase name="AddCartTest" classname="codingChallenge.mapsynq.ClickAddToCartTest" time="0.231"/>
+  <testcase name="basePageNavigation" classname="codingChallenge.mapsynq.HomePage" time="0.424"/>
+  <testcase name="ValidateProductsTitle" classname="codingChallenge.mapsynq.ValidateProductsPageTitle" time="0.533">
+    <failure message="Product Title does not match expected [Product] but found [PRODUCTS]" type="java.lang.AssertionError">java.lang.AssertionError: Product Title does not match expected [Product] but found [PRODUCTS]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at codingChallenge.mapsynq.ValidateProductsPageTitle.ValidateProductsTitle(ValidateProductsPageTitle.java:38)
+</failure>
+  </testcase>
 </testsuite>

@@ -35,7 +35,7 @@ public class ValidateProductsPageTitle extends base {
 			l.getLoginBtn().click();
 			productsPage p=new productsPage(driver);
 			String title=p.getProductTitle().getText();
-			Assert.assertEquals(title, "Products","Product Title does not match");  
+			Assert.assertEquals(title, "Product","Product Title does not match");  
 	  }
 
 }
